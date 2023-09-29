@@ -7,4 +7,4 @@ https://github.com/noorbhatia/smallcase_assignment/assets/73331825/81a472d6-531d
 
 
 
-[link] : sc-assignment://home/redirect?status=test&code=123&data=%7B%22name%22%3A%22ABC%22%2C%22id%22%3A%221%22%7D
+[link] : <sc-assignment://home/redirect?status=test&code=123&data=%7B%22name%22%3A%22ABC%22%2C%22id%22%3A%221%22%7D>
