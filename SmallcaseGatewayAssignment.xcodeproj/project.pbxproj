@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		7C143CB72AC54DCC008C8207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C143CB62AC54DCC008C8207 /* AppDelegate.swift */; };
 		7C143CB92AC54DCC008C8207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C143CB82AC54DCC008C8207 /* SceneDelegate.swift */; };
-		7C143CBB2AC54DCC008C8207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C143CBA2AC54DCC008C8207 /* ViewController.swift */; };
-		7C143CBE2AC54DCC008C8207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C143CBC2AC54DCC008C8207 /* Main.storyboard */; };
+		7C143CBB2AC54DCC008C8207 /* GatewayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C143CBA2AC54DCC008C8207 /* GatewayViewController.swift */; };
 		7C143CC02AC54DCE008C8207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C143CBF2AC54DCE008C8207 /* Assets.xcassets */; };
-		7C143CC32AC54DCE008C8207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C143CC12AC54DCE008C8207 /* LaunchScreen.storyboard */; };
+		7C143CCE2AC58DEC008C8207 /* GatewayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C143CCD2AC58DEC008C8207 /* GatewayViewModel.swift */; };
+		7C143CD22AC5E7E0008C8207 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C143CD12AC5E7E0008C8207 /* APIService.swift */; };
+		7C143CD42AC5E838008C8207 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C143CD32AC5E838008C8207 /* DataModel.swift */; };
+		7C143CD62AC6049E008C8207 /* GatewayViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C143CD52AC6049E008C8207 /* GatewayViewController+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C143CB32AC54DCC008C8207 /* SmallcaseGatewayAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallcaseGatewayAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C143CB62AC54DCC008C8207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C143CB82AC54DCC008C8207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C143CBA2AC54DCC008C8207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C143CBD2AC54DCC008C8207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C143CBA2AC54DCC008C8207 /* GatewayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayViewController.swift; sourceTree = "<group>"; };
 		7C143CBF2AC54DCE008C8207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C143CC22AC54DCE008C8207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C143CC42AC54DCE008C8207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C143CCD2AC58DEC008C8207 /* GatewayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayViewModel.swift; sourceTree = "<group>"; };
+		7C143CD12AC5E7E0008C8207 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		7C143CD32AC5E838008C8207 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7C143CD52AC6049E008C8207 /* GatewayViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GatewayViewController+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		7C143CB52AC54DCC008C8207 /* SmallcaseGatewayAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				7C143CB62AC54DCC008C8207 /* AppDelegate.swift */,
-				7C143CB82AC54DCC008C8207 /* SceneDelegate.swift */,
-				7C143CBA2AC54DCC008C8207 /* ViewController.swift */,
-				7C143CBC2AC54DCC008C8207 /* Main.storyboard */,
-				7C143CBF2AC54DCE008C8207 /* Assets.xcassets */,
-				7C143CC12AC54DCE008C8207 /* LaunchScreen.storyboard */,
-				7C143CC42AC54DCE008C8207 /* Info.plist */,
+				7C143CCB2AC567D1008C8207 /* Sources */,
+				7C143CCA2AC567C4008C8207 /* Resources */,
 			);
 			path = SmallcaseGatewayAssignment;
+			sourceTree = "<group>";
+		};
+		7C143CCA2AC567C4008C8207 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C143CBF2AC54DCE008C8207 /* Assets.xcassets */,
+				7C143CC42AC54DCE008C8207 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C143CCB2AC567D1008C8207 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7C143CCF2AC5E7C3008C8207 /* Services */,
+				7C143CB62AC54DCC008C8207 /* AppDelegate.swift */,
+				7C143CB82AC54DCC008C8207 /* SceneDelegate.swift */,
+				7C143CCC2AC5689E008C8207 /* Gateway */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7C143CCC2AC5689E008C8207 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				7C143CBA2AC54DCC008C8207 /* GatewayViewController.swift */,
+				7C143CCD2AC58DEC008C8207 /* GatewayViewModel.swift */,
+				7C143CD32AC5E838008C8207 /* DataModel.swift */,
+				7C143CD52AC6049E008C8207 /* GatewayViewController+Helpers.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		7C143CCF2AC5E7C3008C8207 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7C143CD02AC5E7CF008C8207 /* API Service */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7C143CD02AC5E7CF008C8207 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				7C143CD12AC5E7E0008C8207 /* APIService.swift */,
+			);
+			path = "API Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C143CC32AC54DCE008C8207 /* LaunchScreen.storyboard in Resources */,
 				7C143CC02AC54DCE008C8207 /* Assets.xcassets in Resources */,
-				7C143CBE2AC54DCC008C8207 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +182,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C143CBB2AC54DCC008C8207 /* ViewController.swift in Sources */,
+				7C143CBB2AC54DCC008C8207 /* GatewayViewController.swift in Sources */,
+				7C143CD22AC5E7E0008C8207 /* APIService.swift in Sources */,
 				7C143CB72AC54DCC008C8207 /* AppDelegate.swift in Sources */,
+				7C143CCE2AC58DEC008C8207 /* GatewayViewModel.swift in Sources */,
 				7C143CB92AC54DCC008C8207 /* SceneDelegate.swift in Sources */,
+				7C143CD62AC6049E008C8207 /* GatewayViewController+Helpers.swift in Sources */,
+				7C143CD42AC5E838008C8207 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7C143CBC2AC54DCC008C8207 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C143CBD2AC54DCC008C8207 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7C143CC12AC54DCE008C8207 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C143CC22AC54DCE008C8207 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7C143CC52AC54DCE008C8207 /* Debug */ = {
@@ -289,12 +318,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FJPU4SM32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SmallcaseGatewayAssignment/Info.plist;
+				INFOPLIST_FILE = SmallcaseGatewayAssignment/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +331,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.SmallcaseGatewayAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +349,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8FJPU4SM32;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SmallcaseGatewayAssignment/Info.plist;
+				INFOPLIST_FILE = SmallcaseGatewayAssignment/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +362,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.SmallcaseGatewayAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
